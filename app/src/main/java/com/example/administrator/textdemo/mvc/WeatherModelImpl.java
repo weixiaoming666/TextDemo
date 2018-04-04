@@ -10,7 +10,7 @@ import retrofit2.http.GET;
 
 /**
  * Created by Administrator on 2018/4/4.
- *
+ *   MVP   中的   P
  */
 
 public class WeatherModelImpl implements WeatherModel {

@@ -15,6 +15,7 @@ import com.example.administrator.textdemo.ToastUtils;
  * Created by Administrator on 2018/4/4.
  */
 //mvp 调用顺序
+//    https://www.jianshu.com/p/734d3693da02
 public class MyMVPdemoAty extends AppCompatActivity {
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;

@@ -108,6 +108,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintVertical_bias="0.559" />
     <TextView
+        android:background="@color/callback"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="callback"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="标准接口回调"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <TextView
         android:background="@color/mvc"
         android:gravity="center"
         android:textSize="20sp"
@@ -120,5 +135,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.652" />
+        app:layout_constraintVertical_bias="0.648" />
 </android.support.constraint.ConstraintLayout>

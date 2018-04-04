@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.administrator.textdemo.aidl.AIDLAty;
 import com.example.administrator.textdemo.horizontallistView.DemoOne;
 import com.example.administrator.textdemo.intentfilter.IntentFilterDemoAty;
+import com.example.administrator.textdemo.interfacecallback.Aaty;
 import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
@@ -83,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
     public void jumpmvc(View view) {
         jump2Aty(WeatherAtyTest.class);
     }
+// 接口回调
+    public void callback(View view) {
+        jump2Aty(Aaty.class);}
 }
 
 

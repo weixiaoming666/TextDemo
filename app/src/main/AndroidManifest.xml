@@ -61,7 +61,9 @@
         <activity
             android:name=".mvpdemo.MvpDemoAty"
             android:label="@string/title_activity_mvp_demo_aty" />
-        <activity android:name=".mvc.WeatherAtyTest"></activity>
+        <activity android:name=".mvc.WeatherAtyTest" />
+        <activity android:name=".interfacecallback.Aaty" />
+        <activity android:name=".interfacecallback.Baty"></activity>
     </application>
 
 </manifest>

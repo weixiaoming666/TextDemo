@@ -10,7 +10,7 @@ import com.example.administrator.textdemo.ToastUtils;
 import com.example.administrator.textdemo.retrofit.GetData;
 import com.example.administrator.textdemo.retrofit.NetRequest_Interface;
 import com.example.administrator.textdemo.retrofit.RetrofitNetImp;
-
+//https://www.jianshu.com/p/734d3693da02    这也是个mvp
 public class WeatherAtyTest extends AppCompatActivity implements OnWeatherListener,GetData<Weather>{
     private TextView tv_city,tv_temp,tv_WD,tv_SD,tv_time;
     private WeatherModel weatherModel;
@@ -24,7 +24,6 @@ public class WeatherAtyTest extends AppCompatActivity implements OnWeatherListen
         tv_temp = (TextView) findViewById(R.id.tv_temp);
         tv_time = (TextView) findViewById(R.id.tv_time);
         weatherModel = new WeatherModelImpl();
-
     }
 
     @Override
