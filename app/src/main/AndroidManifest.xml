@@ -60,7 +60,8 @@
         <activity android:name=".mvpdemo.MyMVPdemoAty" />
         <activity
             android:name=".mvpdemo.MvpDemoAty"
-            android:label="@string/title_activity_mvp_demo_aty"></activity>
+            android:label="@string/title_activity_mvp_demo_aty" />
+        <activity android:name=".mvc.WeatherAtyTest"></activity>
     </application>
 
 </manifest>

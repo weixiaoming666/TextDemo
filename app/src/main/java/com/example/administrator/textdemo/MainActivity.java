@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.administrator.textdemo.aidl.AIDLAty;
 import com.example.administrator.textdemo.horizontallistView.DemoOne;
 import com.example.administrator.textdemo.intentfilter.IntentFilterDemoAty;
+import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
 import com.example.administrator.textdemo.view.miclockview.MIClockViewAty;
@@ -77,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void myClock(View view) {
         jump2Aty(MvpDemoAty.class);
+    }
+    //mvc 模式展示
+    public void jumpmvc(View view) {
+        jump2Aty(WeatherAtyTest.class);
     }
 }
 
