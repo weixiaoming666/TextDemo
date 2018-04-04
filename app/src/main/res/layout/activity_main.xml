@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.textdemo.MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="start"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="横向滑动测试!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.033"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="intentFilter"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="AIDL Text!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="aidlText"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="IntentFilter Text!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.201" />
+    <TextView
+        android:background="@color/mvp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="mvpDemo"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="mvp模式 Text!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.471" />
+    <TextView
+        android:background="@color/graw"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:onClick="viewpageDemo1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="水滴viewpage Text!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.297" />
+    <TextView
+        android:background="@color/micolor"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="miClock"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="小米时钟 Text!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.384" />
+    <TextView
+        android:background="@color/micolor"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="myClock"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="mvp 自动深南工!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.559" />
+</android.support.constraint.ConstraintLayout>

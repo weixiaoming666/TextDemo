@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.textdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".horizontallistView.DemoOne" />
+        <activity android:name=".intentfilter.IntentFilterDemoAty">
+            <intent-filter>
+                <action android:name="com.ipc" />
+                <action android:name="com.abc" />
+                <action android:name="woxihaunni" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 必须有 default android.intent.category.DEFAULT -->
+                <!-- <category android:name="android.intent.category.TEXT"/> -->
+                <!-- <category android:name="android.intent.category.TEXT_ONE"/> -->
+                <!-- <category android:name="android.intent.category.TEXT_TWO"/> -->
+                <!-- <data android:mimeType="image/*" -->
+                <!-- android:host="www.baidu.com" -->
+                <!-- android:scheme="http" /> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".intentfilter.TextInfilter">
+            <intent-filter>
+                <action android:name="woxihaunni" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".aidl.MyService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="com.xiaoming" />
+
+        <activity android:name=".aidl.AIDLAty" />
+        <activity android:name=".view.viewpage.ViewPageDemo1" />
+        <activity android:name=".view.miclockview.MIClockViewAty" />
+        <activity android:name=".mvpdemo.MyMVPdemoAty" />
+        <activity
+            android:name=".mvpdemo.MvpDemoAty"
+            android:label="@string/title_activity_mvp_demo_aty"></activity>
+    </application>
+
+</manifest>

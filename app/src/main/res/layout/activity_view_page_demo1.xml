@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.textdemo.view.viewpage.ViewPageDemo1">
+
+    <comulez.github.droplibrary.DropViewPager
+        android:id="@+id/DropViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></comulez.github.droplibrary.DropViewPager>
+
+    <comulez.github.droplibrary.DropIndicator
+        android:id="@+id/circleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:circle_color="@android:color/darker_gray"
+        app:click_color="#fafafa"
+        app:color1="#FCC04D"
+        app:color2="#00C3E2"
+        app:color3="#FE626D"
+        app:color4="#966ACF"
+        app:duration="800"
+        app:radius="20dp"
+        app:scale="0.5"
+      >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/duigou" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/sym_action_call" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chacha" />
+    </comulez.github.droplibrary.DropIndicator>
+</LinearLayout>
