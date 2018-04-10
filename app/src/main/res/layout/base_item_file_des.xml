@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_v_wrap_center" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp" >
+
+        <ImageView
+            android:id="@+id/iv_base_item_file_des"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/duigou"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_isupload_base_item_file_des"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/duigou" >
+        </ImageView>
+        <ImageView
+            android:id="@+id/iv_left_bottom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/blue_duigou" >
+        </ImageView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_des_base_item_file_des"
+        style="@style/text_gray_14"
+        android:layout_marginTop="5dp"
+        android:text="描述">
+    </TextView>
+    <ImageView
+        android:id="@+id/iv_select_base_item_file_des"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chacha">
+    </ImageView>
+</LinearLayout>

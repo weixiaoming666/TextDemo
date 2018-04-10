@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_parent_pic_base_add_file"
+        style="@style/ll_v"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout style="@style/ll_h_center">
+
+            <TextView
+                style="@style/text_black_16"
+                android:layout_marginRight="3dp"
+                android:text="照片:"></TextView>
+
+            <TextView
+                android:id="@+id/tv_need_pic_base_add_file"
+                style="@style/text_red_16"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="24sp"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_pic_base_add_file"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_pic_list_base_add_file"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/iv_add_picture_base_add_file"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:drawable/ic_input_add"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_parent_yinpin_base_add_file"
+        style="@style/ll_v">
+
+        <LinearLayout style="@style/ll_h_center">
+
+            <TextView
+                style="@style/text_black_16"
+                android:layout_marginRight="3dp"
+                android:text="音频:"></TextView>
+
+            <TextView
+                android:id="@+id/tv_need_yinpin_base_add_file"
+                style="@style/text_red_16"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="24sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_luyin_base_add_file"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_luyin_list_base_add_file"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/iv_add_luyin_base_add_file"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:drawable/ic_input_add"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_parent_shipin_base_add_file"
+        style="@style/ll_v"
+        android:paddingBottom="10dp">
+
+        <LinearLayout style="@style/ll_h_center">
+
+            <TextView
+                style="@style/text_black_16"
+                android:layout_marginRight="3dp"
+                android:text="录像:"></TextView>
+
+            <TextView
+                android:id="@+id/tv_need_shipin_base_add_file"
+                style="@style/text_red_16"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="24sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_shipin_base_add_file"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_luxiang_list_base_add_file"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/iv_add_luxiang_base_add_file"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:drawable/ic_input_add"></ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
