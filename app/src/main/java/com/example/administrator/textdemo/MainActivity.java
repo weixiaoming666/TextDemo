@@ -18,6 +18,7 @@ import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
 import com.example.administrator.textdemo.view.miclockview.MIClockViewAty;
+import com.example.administrator.textdemo.view.radarview.RadarActivity;
 import com.example.administrator.textdemo.view.viewpage.ViewPageDemo1;
 
 import org.json.JSONException;
@@ -87,6 +88,10 @@ public class MainActivity extends AppCompatActivity {
 // 接口回调
     public void callback(View view) {
         jump2Aty(Aaty.class);}
+
+    public void jumpRader(View view) {
+        jump2Aty(RadarActivity.class);
+    }
 }
 
 

@@ -64,6 +64,8 @@
         <activity android:name=".mvc.WeatherAtyTest" />
         <activity android:name=".interfacecallback.Aaty" />
         <activity android:name=".interfacecallback.Baty"></activity>
+        <activity android:name=".view.radarview.RadarActivity"></activity>
+        <activity android:name=".view.radarview.RadarScanTestActivty"></activity>
     </application>
 
 </manifest>
