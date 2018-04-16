@@ -60,7 +60,7 @@ public class RadarActivity extends Activity implements OnClickListener {
 		}
 	}
 	
-	private void animation_01(float animation_size){
+	private void animation_01(float animation_size){//脉冲效果
 		//创建一个AnimationSet对象，参数为Boolean型，
         //true表示使用Animation的interpolator，false则是使用自己的
 		animationSet = new AnimationSet(true);
@@ -105,7 +105,7 @@ public class RadarActivity extends Activity implements OnClickListener {
         
         @Override
         public void onStopTrackingTouch(SeekBar seekBar) {
-        	animation_01(seekBar.getProgress()*10.0f);
+        	animation_01(seekBar.getProgress()*10.0f);//移动seedbar 去传递参数给动画比例
         }
         
         @Override

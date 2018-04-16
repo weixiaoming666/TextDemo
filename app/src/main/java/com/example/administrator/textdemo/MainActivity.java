@@ -17,6 +17,7 @@ import com.example.administrator.textdemo.interfacecallback.Aaty;
 import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
+import com.example.administrator.textdemo.view.groupviewaddviewanimotion.DiscrollViewAty;
 import com.example.administrator.textdemo.view.miclockview.MIClockViewAty;
 import com.example.administrator.textdemo.view.radarview.RadarActivity;
 import com.example.administrator.textdemo.view.viewpage.ViewPageDemo1;
@@ -91,6 +92,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void jumpRader(View view) {
         jump2Aty(RadarActivity.class);
+    }
+
+    public void jumpDiscroll(View view) {
+        jump2Aty(DiscrollViewAty.class);
     }
 }
 

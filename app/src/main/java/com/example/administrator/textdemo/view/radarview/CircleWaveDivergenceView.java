@@ -34,6 +34,7 @@ public class CircleWaveDivergenceView extends RelativeLayout {
 	private long TIME_DIFF = 1500;
 	private float offsetArgs = 0;
 	private boolean isSearching = false;
+//	三张图片  俩张背景 一张指针
 	private Bitmap bitmap;
 	private Bitmap bitmap1;
 	private Bitmap bitmap2;

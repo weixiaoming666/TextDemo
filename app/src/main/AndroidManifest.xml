@@ -66,6 +66,7 @@
         <activity android:name=".interfacecallback.Baty"></activity>
         <activity android:name=".view.radarview.RadarActivity"></activity>
         <activity android:name=".view.radarview.RadarScanTestActivty"></activity>
+        <activity android:name=".view.groupviewaddviewanimotion.DiscrollViewAty" />
     </application>
 
 </manifest>

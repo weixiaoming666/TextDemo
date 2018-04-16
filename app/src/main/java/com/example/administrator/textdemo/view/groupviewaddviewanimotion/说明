@@ -1,0 +1,4 @@
+这里的  DiscrollView  为外部包裹滑动view  监听每个view的出现位置操作动画
+DiscrollViewContent 为view 集合，提供子view相关数据  包含 若干 DiscrollvableView（向上转型）
+DiscrollvableView 为单个view，实现 接口 DiscrollVable
+接口 DiscrollVable 俩个方法   一个返回  一个显示
