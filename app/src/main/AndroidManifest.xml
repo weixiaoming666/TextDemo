@@ -67,6 +67,8 @@
         <activity android:name=".view.radarview.RadarActivity"></activity>
         <activity android:name=".view.radarview.RadarScanTestActivty"></activity>
         <activity android:name=".view.groupviewaddviewanimotion.DiscrollViewAty" />
+        <activity android:name=".view.adddelview.AnimButtonAty" />
+        <activity android:name=".view.adddelview.RecyclerViewTextAty" />
     </application>
 
 </manifest>
