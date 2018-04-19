@@ -20,6 +20,7 @@ import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
 import com.example.administrator.textdemo.view.adddelview.AnimButtonAty;
 import com.example.administrator.textdemo.view.groupviewaddviewanimotion.DiscrollViewAty;
 import com.example.administrator.textdemo.view.miclockview.MIClockViewAty;
+import com.example.administrator.textdemo.view.myview.MyViewAty;
 import com.example.administrator.textdemo.view.radarview.RadarActivity;
 import com.example.administrator.textdemo.view.viewpage.ViewPageDemo1;
 
@@ -99,6 +100,10 @@ public class MainActivity extends AppCompatActivity {
         jump2Aty(DiscrollViewAty.class);
     } public void shopAddDel(View view) {
         jump2Aty(AnimButtonAty.class);
+    }
+
+    public void learnView(View view) {
+        jump2Aty(MyViewAty.class);
     }
 }
 
