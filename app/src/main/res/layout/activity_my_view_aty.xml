@@ -6,7 +6,6 @@
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.administrator.textdemo.view.myview.MyViewAty">
 <com.example.administrator.textdemo.view.myview.PieChart
-
     custom:showText="true"
     custom:labelPosition="left"
     android:layout_height="50dp"

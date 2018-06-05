@@ -70,7 +70,22 @@
         <activity android:name=".view.groupviewaddviewanimotion.DiscrollViewAty" />
         <activity android:name=".view.adddelview.AnimButtonAty" />
         <activity android:name=".view.adddelview.RecyclerViewTextAty" />
-        <activity android:name=".view.myview.MyViewAty"></activity>
+        <activity android:name=".view.myview.MyViewAty" />
+        <activity android:name=".polymorphismtext.PolymorphismActivity" />
+
+        <receiver android:name=".broadcastreceiver.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="guo.com.example.MyBroadcast" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreceiver.BtextAty$MyBroadcastReceiverB" >
+            <intent-filter>
+                <action android:name="guo.com.example.MyBroadcastB" />
+            </intent-filter>
+            </receiver>
+
+        <activity android:name=".broadcastreceiver.RecivierAty" />
+        <activity android:name=".broadcastreceiver.BtextAty"></activity>
     </application>
 
 </manifest>

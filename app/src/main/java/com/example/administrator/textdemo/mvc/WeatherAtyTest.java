@@ -53,6 +53,7 @@ public class WeatherAtyTest extends AppCompatActivity implements OnWeatherListen
 
     public void getdata(View view) {
         RetrofitNetImp.getNetImp().getW(this);//写在网络请求中的接口回调
+
 //        本质是一样的 都是接口回调  明显 getred 的回调分离的更清楚
     }
 

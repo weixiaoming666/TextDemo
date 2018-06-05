@@ -2,9 +2,16 @@ package com.example.administrator.textdemo.retrofit;
 
 import com.example.administrator.textdemo.mvc.Weather;
 
+import java.io.File;
+import java.util.List;
+
+import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.Retrofit;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 /**
  * Created by wxm on 2018/3/30.
@@ -18,4 +25,13 @@ public interface   NetRequest_Interface {
      Call<Weather> getWheaer();
     @GET("data/sk/101010100.html")
     Call<String> getWheaers();
+    /**
+     * 通过 MultipartBody和@body作为参数来上传
+     * @param multipartBody MultipartBody包含多个Part
+     * @return 状态信息
+     */
+    @POST("users/image")
+    Call<String> uploadFileWithRequestBody(@Body MultipartBody multipartBody,
+                                           @Query("name") List<File> files);
+
 }

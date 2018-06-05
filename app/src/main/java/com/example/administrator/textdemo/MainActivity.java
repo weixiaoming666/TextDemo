@@ -11,13 +11,16 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.administrator.textdemo.aidl.AIDLAty;
+import com.example.administrator.textdemo.broadcastreceiver.RecivierAty;
 import com.example.administrator.textdemo.horizontallistView.DemoOne;
 import com.example.administrator.textdemo.intentfilter.IntentFilterDemoAty;
 import com.example.administrator.textdemo.interfacecallback.Aaty;
 import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
+import com.example.administrator.textdemo.polymorphismtext.PolymorphismActivity;
 import com.example.administrator.textdemo.view.adddelview.AnimButtonAty;
+import com.example.administrator.textdemo.view.dialog.TextDialog;
 import com.example.administrator.textdemo.view.groupviewaddviewanimotion.DiscrollViewAty;
 import com.example.administrator.textdemo.view.miclockview.MIClockViewAty;
 import com.example.administrator.textdemo.view.myview.MyViewAty;
@@ -104,6 +107,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void learnView(View view) {
         jump2Aty(MyViewAty.class);
+    }
+
+    public void showDialog(View view) {
+        TextDialog textDialog  = new TextDialog(this,true);
+        textDialog.show();
+    }
+
+    public void showDuoTai(View view) {
+        jump2Aty(PolymorphismActivity.class);
+    }
+
+    public void showReciver(View view) {
+        jump2Aty(RecivierAty.class);
     }
 }
 

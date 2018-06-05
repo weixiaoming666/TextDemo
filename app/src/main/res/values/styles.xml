@@ -91,4 +91,8 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:backgroundDimAmount">0.4</item>
     </style>
+
+    <style name="add_task">
+        <item name="android:background">@drawable/add_task_shape</item>
+    </style>
 </resources>

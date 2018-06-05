@@ -1,6 +1,12 @@
 package com.example.administrator.textdemo.retrofit;
 
 import com.example.administrator.textdemo.mvc.Weather;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -59,5 +65,10 @@ public class RetrofitNetImp{//写一个 retrofit 的实例 然后调用就好
 
             }
         });
+    }
+    public  void getImages(){
+        List<File> files = new ArrayList<>();
+
+
     }
 }

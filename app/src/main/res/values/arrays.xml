@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_task_type">
+        <item >准备工作</item>
+        <item >重点检查</item>
+        <item >常规检查</item>
+        <item >旁站见证</item>
+        <item >质量验收</item>
+    </string-array>
+</resources>

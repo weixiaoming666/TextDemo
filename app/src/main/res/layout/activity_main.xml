@@ -128,5 +128,35 @@
         android:layout_height="30dp"
         android:text="一字一句敲打的自定义view学习!!!!"
         />
+    <TextView
+
+        android:background="@drawable/learn_view_shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="showDialog"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="show Dialog"
+        />
+    <TextView
+
+        android:background="@drawable/learn_view_shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="showDuoTai"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="多态，不存在的"
+        />
+    <TextView
+
+        android:background="@drawable/learn_view_shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="showReciver"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="广播"
+        />
 </LinearLayout>
 </ScrollView>

@@ -10,7 +10,7 @@ public class MyViewAty extends AppCompatActivity implements OnCurrentItemChanged
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_view_aty);
+            setContentView(R.layout.activity_my_view_aty);
     }
 
     @Override
