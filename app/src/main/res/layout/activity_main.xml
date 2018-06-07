@@ -158,5 +158,14 @@
         android:layout_height="30dp"
         android:text="广播"
         />
+    <TextView
+        android:background="@drawable/learn_view_shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="viewLeanRYG"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="任玉刚 view 研究"
+        />
 </LinearLayout>
 </ScrollView>

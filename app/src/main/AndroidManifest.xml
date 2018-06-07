@@ -78,14 +78,15 @@
                 <action android:name="guo.com.example.MyBroadcast" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".broadcastreceiver.BtextAty$MyBroadcastReceiverB" >
+        <receiver android:name=".broadcastreceiver.BtextAty$MyBroadcastReceiverB">
             <intent-filter>
                 <action android:name="guo.com.example.MyBroadcastB" />
             </intent-filter>
-            </receiver>
+        </receiver>
 
         <activity android:name=".broadcastreceiver.RecivierAty" />
-        <activity android:name=".broadcastreceiver.BtextAty"></activity>
+        <activity android:name=".broadcastreceiver.BtextAty" />
+        <activity android:name=".view.ryglearn.ViewRXGAty"></activity>
     </application>
 
 </manifest>

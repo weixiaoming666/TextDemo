@@ -2,13 +2,11 @@ package com.example.administrator.textdemo;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
+import android.view.VelocityTracker;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.administrator.textdemo.aidl.AIDLAty;
 import com.example.administrator.textdemo.broadcastreceiver.RecivierAty;
@@ -25,12 +23,8 @@ import com.example.administrator.textdemo.view.groupviewaddviewanimotion.Discrol
 import com.example.administrator.textdemo.view.miclockview.MIClockViewAty;
 import com.example.administrator.textdemo.view.myview.MyViewAty;
 import com.example.administrator.textdemo.view.radarview.RadarActivity;
+import com.example.administrator.textdemo.view.ryglearn.ViewRXGAty;
 import com.example.administrator.textdemo.view.viewpage.ViewPageDemo1;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,13 +33,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-
     public void start(View view) {
         startActivity(new Intent(this, DemoOne.class));
     }
-
-
     public void intentFilter(View view) {//测试aty过滤条件
         Intent intent = new Intent("woxihaunni");
 //        intent.addCategory("android.intent.category.TEXT_ONE");
@@ -121,6 +111,13 @@ public class MainActivity extends AppCompatActivity {
     public void showReciver(View view) {
         jump2Aty(RecivierAty.class);
     }
+
+    public void viewLeanRYG(View view) {
+        jump2Aty(ViewRXGAty.class);
+
+    }
+
+
 }
 
 
