@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MotionEvent;
-import android.view.VelocityTracker;
 import android.view.View;
 
 import com.example.administrator.textdemo.aidl.AIDLAty;
@@ -13,6 +11,7 @@ import com.example.administrator.textdemo.broadcastreceiver.RecivierAty;
 import com.example.administrator.textdemo.horizontallistView.DemoOne;
 import com.example.administrator.textdemo.intentfilter.IntentFilterDemoAty;
 import com.example.administrator.textdemo.interfacecallback.Aaty;
+import com.example.administrator.textdemo.litepal.LitepalAty;
 import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
@@ -117,7 +116,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+//litepal   数据库使用
+    public void litepal(View view) {
+        jump2Aty(LitepalAty.class);
+    }
 }
 
 

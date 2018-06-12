@@ -7,4 +7,11 @@
         <item >旁站见证</item>
         <item >质量验收</item>
     </string-array>
+    <string-array name="view_learn_items">
+        <item >1.什么是view</item>
+        <item >2.view的滑动</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+    </string-array>
 </resources>
