@@ -11,10 +11,13 @@ import com.example.administrator.textdemo.R;
 import com.example.administrator.textdemo.ToastUtils;
 import com.example.administrator.textdemo.view.ryglearn.activity.View1Activity;
 import com.example.administrator.textdemo.view.ryglearn.activity.View2Activity;
+import com.example.administrator.textdemo.view.ryglearn.activity.View3Activity;
+import com.example.administrator.textdemo.view.ryglearn.activity.View4Activity;
 
 //任玉刚 关于安卓开发艺术 view 的系统学习
 public class ViewRXGAty extends AppCompatActivity {
     private AllShowListView showListView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +51,11 @@ public class ViewRXGAty extends AppCompatActivity {
                 ToastUtils.centermsg(this,i+"");
                 break;
             case 3:
+                startActivity(new Intent(this, View3Activity.class));
                 ToastUtils.centermsg(this,i+"");
                 break;
             case 4:
+                startActivity(new Intent(this, View4Activity.class));
                 ToastUtils.centermsg(this,i+"");
                 break;
 

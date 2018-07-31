@@ -176,5 +176,14 @@
         android:layout_height="30dp"
         android:text="litePal"
         />
+    <TextView
+        android:background="@drawable/learn_view_shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="gson2hanzi"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Gson汉子"
+        />
 </LinearLayout>
 </ScrollView>

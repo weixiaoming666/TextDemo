@@ -10,6 +10,19 @@
     <string-array name="view_learn_items">
         <item >1.什么是view</item>
         <item >2.view的滑动</item>
+        <item >任意滑动的view</item>
+        <item >滑动冲突之场景1：外部拦截法</item>
+        <item >滑动冲突之场景1：内部拦截法</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
+        <item >...</item>
         <item >...</item>
         <item >...</item>
         <item >...</item>

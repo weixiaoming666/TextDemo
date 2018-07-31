@@ -1,4 +1,4 @@
-package com.example.administrator.textdemo.litepal;
+package com.example.administrator.textdemo.litepal.table;
 
 import org.litepal.crud.LitePalSupport;
 
@@ -8,7 +8,7 @@ import org.litepal.crud.LitePalSupport;
 
 public class BookBean extends LitePalSupport {
     private String name;
-    private int id;
+    private int id;//这个id 和 传入的 id 冲突   会被覆盖
     private String address;
     private String price;
     private String author;
@@ -22,7 +22,9 @@ public class BookBean extends LitePalSupport {
         this.author = author;
         this.contet = content;
     }
-
+    public int getId() {
+        return id;
+    }
     public String getName() {
         return name;
     }
@@ -32,6 +34,9 @@ public class BookBean extends LitePalSupport {
     }
 
 
+    public String getContet() {
+        return contet;
+    }
 
     public String getAddress() {
         return address;
@@ -57,13 +62,17 @@ public class BookBean extends LitePalSupport {
         this.author = author;
     }
 
-    public String getCotent() {
-        return cotent;
-    }
 
-    public void setCotent(String cotent) {
-        this.cotent = cotent;
-    }
 
-    private String cotent;
+    @Override
+    public String toString() {
+        return "BookBean{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", address='" + address + '\'' +
+                ", price='" + price + '\'' +
+                ", author='" + author + '\'' +
+                ", contet='" + contet + '\'' +
+                '}';
+    }
 }

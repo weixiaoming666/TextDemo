@@ -6,6 +6,7 @@
     <color name="red">#ff5040</color>
     <color name="yellow">#ffe240</color>
     <color name="graw">#80ff40</color>
+    <color name="gray">#d7d9d5</color>
     <color name="micolor">#40ffd6</color>
     <color name="mvp">#5040ff</color>
     <color name="mvc">#851af934</color>
@@ -13,4 +14,5 @@
     <color name="discrowview">#eef9df1a</color>
     <color name="shop">#eef9251a</color>
     <color name="white">#f1f4f1</color>
+    <color name="black">#0d0d0d</color>
 </resources>

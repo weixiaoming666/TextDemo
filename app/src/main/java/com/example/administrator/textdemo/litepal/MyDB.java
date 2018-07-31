@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by wxm on 2018/6/11.
  */
-
+//http://blog.csdn.net/guolin_blog/article/details/38556989
 public class MyDB extends SQLiteOpenHelper {
 
     public static final String CREATE_NEWS = "create table book ("
@@ -18,7 +18,9 @@ public class MyDB extends SQLiteOpenHelper {
             + "price text,"
             + "author text,"
             + "contet text,"
-            + "key integer)";
+            + "ket integer)";
+
+
     public MyDB(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }

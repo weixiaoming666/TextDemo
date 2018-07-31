@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="org.litepal.LitePalApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -89,8 +89,11 @@
         <activity android:name=".broadcastreceiver.BtextAty" />
         <activity android:name=".view.ryglearn.ViewRXGAty" />
         <activity android:name=".view.ryglearn.activity.View1Activity" />
-        <activity android:name=".litepal.LitepalAty"></activity>
+        <activity android:name=".litepal.LitepalAty" />
         <activity android:name=".view.ryglearn.activity.View2Activity" />
+        <activity android:name=".litepal.LitepalMainActivity" />
+        <activity android:name=".view.ryglearn.activity.View3Activity" />
+        <activity android:name=".view.ryglearn.activity.View4Activity"></activity>
     </application>
 
 </manifest>

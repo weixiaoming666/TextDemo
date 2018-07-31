@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="书籍内容"
+        android:textSize="20sp"
+        android:background="@drawable/book_title_dialog"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="书名"
+        android:textColorHint="@color/mvc" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="编号id"
+        android:inputType="number"
+        android:textColorHint="@color/mvc" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="地址"
+        android:textColorHint="@color/mvc" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="价钱"
+        android:inputType="number"
+        android:textColorHint="@color/mvc" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/et_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="内容"
+        android:textColorHint="@color/mvc" />
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/et_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="作者"
+        android:textColorHint="@color/mvc" />
+</android.support.v7.widget.LinearLayoutCompat>

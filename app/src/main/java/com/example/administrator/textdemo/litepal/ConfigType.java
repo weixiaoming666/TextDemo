@@ -9,5 +9,5 @@ public  class ConfigType {
     public final static int DB_ADD_TYPE = 1;
     public final static int DB_DEL_TYPE = 2;
     public final static int DB_UP_TYPE = 3;
-    public final static int DB_INSERT_TYPE = 4;
+    public final static int DB_FIND_TYPE = 4;
 }
