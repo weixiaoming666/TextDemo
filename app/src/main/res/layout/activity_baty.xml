@@ -5,10 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.administrator.textdemo.interfacecallback.Baty">
-<Button
-    android:onClick="changeAaty"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="点我修改A的数据"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:onClick="changeAaty"
+        android:text="点我修改A的数据"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:onClick="changeAatyInterface"
+        android:text="点我修改A的数据,标准接口回调哦"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 </android.support.constraint.ConstraintLayout>

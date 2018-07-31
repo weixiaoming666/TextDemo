@@ -27,8 +27,8 @@
         app:color3="#FE626D"
         app:color4="#966ACF"
         app:duration="800"
-        app:radius="20dp"
-        app:scale="0.5"
+        app:radius="25dp"
+        app:scale="0.8"
       >
         <ImageView
             android:layout_width="wrap_content"
@@ -49,5 +49,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/chacha" />
+
     </comulez.github.droplibrary.DropIndicator>
 </LinearLayout>
