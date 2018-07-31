@@ -88,17 +88,17 @@ public class MainActivity extends AppCompatActivity {
     public void jumpRader(View view) {
         jump2Aty(RadarActivity.class);
     }
-
+// 购物车增减
     public void jumpDiscroll(View view) {
         jump2Aty(DiscrollViewAty.class);
     } public void shopAddDel(View view) {
         jump2Aty(AnimButtonAty.class);
     }
-
+//
     public void learnView(View view) {
         jump2Aty(MyViewAty.class);
     }
-
+//  显示dialog
     public void showDialog(View view) {
         TextDialog textDialog  = new TextDialog(this,true);
         textDialog.show();
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
     public void showDuoTai(View view) {
         jump2Aty(PolymorphismActivity.class);
     }
-
+//  测试广播
     public void showReciver(View view) {
         jump2Aty(RecivierAty.class);
     }

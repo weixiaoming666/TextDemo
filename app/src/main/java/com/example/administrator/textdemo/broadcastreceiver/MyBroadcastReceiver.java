@@ -18,6 +18,12 @@ public  class MyBroadcastReceiver extends BroadcastReceiver   {
         this.changeTextView = changeTextView;
     }
 
+    public MyBroadcastReceiver() {
+        //java.lang.InstantiationException  出现这个异常，如果没有无参构造的时候
+//      java  在对象建立中，会使用不带参数的构造函数来 建立成员回调对象
+//        https://blog.csdn.net/guobaolinghao/article/details/78017359
+    }
+
     public void setChangeTextView(ChangeTextView changeTextView) {
         this.changeTextView = changeTextView;
     }

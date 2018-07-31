@@ -1,17 +1,13 @@
 package com.example.administrator.textdemo.broadcastreceiver;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
-
-import javax.security.auth.callback.CallbackHandler;
 
 public class RecivierAty extends AppCompatActivity {
     private MyBroadcastReceiver receiver;
@@ -27,17 +23,19 @@ public class RecivierAty extends AppCompatActivity {
         changeTextView = new ChangeTextView() {
             @Override
             public void giveA(String s) {
-                textView.setText(s);
+                textView.setText(s);//这里也是接口回调
             }
         };
         receiver = new MyBroadcastReceiver(changeTextView);
+//        receiver.setChangeTextView(changeTextView);
+
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("guo.com.example.MyBroadcast");
         registerReceiver(receiver, intentFilter);//接口回调的时候 必须使用静态注册；
     }
 
     public void sendA(View view) {
-
+        receiver.setChangeTextView(changeTextView);
         Intent intent = new Intent();
         intent.setAction("guo.com.example.MyBroadcast");
         if (change){
@@ -57,5 +55,11 @@ public class RecivierAty extends AppCompatActivity {
         intent.setAction("guo.com.example.MyBroadcastB");
         intent.putExtra("666","我没启动B");
         sendBroadcast(intent);
+    }
+
+    @Override
+    protected void onDestroy() {
+        unregisterReceiver(receiver);//接口回调的时候 必须使用静态注册；
+        super.onDestroy();
     }
 }
