@@ -1,11 +1,9 @@
 package com.example.administrator.textdemo.intentfilter;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.administrator.textdemo.AlbumUtils;
 import com.example.administrator.textdemo.R;
 
 /**

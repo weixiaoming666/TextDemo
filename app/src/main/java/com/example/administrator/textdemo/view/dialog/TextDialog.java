@@ -14,12 +14,9 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
-
-import okhttp3.internal.Util;
+import com.example.administrator.textdemo.utils.ToastUtils;
 
 /**
  * Created by Administrator on 2018/4/20.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/graw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:onClick="showPop"
+        android:id="@+id/textView4"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="popview"
+        android:background="@color/gray"
+         />
+    <TextView
+        android:id="@+id/tv_load_demo"
+        android:onClick="showPop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="加载按钮并且取消"
+        android:background="@color/graw_0"
+        />
+</LinearLayout>

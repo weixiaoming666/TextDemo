@@ -95,4 +95,9 @@
     <style name="add_task">
         <item name="android:background">@drawable/add_task_shape</item>
     </style>
+
+    <style name="MyPopupWindow">
+            <item name="android:windowEnterAnimation">@anim/pop_in</item>
+            <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
 </resources>

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 import com.example.administrator.textdemo.litepal.table.BookBean;
 
 import org.litepal.LitePal;

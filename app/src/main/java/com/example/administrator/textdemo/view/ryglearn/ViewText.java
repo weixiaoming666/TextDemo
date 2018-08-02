@@ -10,7 +10,7 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.widget.Scroller;
 
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 
 /**
  * Created by wxm on 2018/6/8.

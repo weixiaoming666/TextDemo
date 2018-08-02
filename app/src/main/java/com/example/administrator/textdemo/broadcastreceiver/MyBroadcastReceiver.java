@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 
 /**
  * Created by wxm on 2018/5/28.

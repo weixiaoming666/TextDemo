@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 
 /**
  * Created by Administrator on 2018/4/4.

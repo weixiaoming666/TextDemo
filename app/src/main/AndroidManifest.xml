@@ -94,6 +94,8 @@
         <activity android:name=".litepal.LitepalMainActivity" />
         <activity android:name=".view.ryglearn.activity.View3Activity" />
         <activity android:name=".view.ryglearn.activity.View4Activity"></activity>
+        <activity android:name=".grep.GrepAty"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
     </application>
 
 </manifest>

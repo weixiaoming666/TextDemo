@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 import com.nineoldandroids.view.ViewHelper;
 
 /**

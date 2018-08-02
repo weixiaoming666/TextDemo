@@ -1,4 +1,4 @@
-package com.example.administrator.textdemo;
+package com.example.administrator.textdemo.utils;
 
 import android.content.ContentResolver;
 import android.content.Context;

@@ -6,9 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 import com.example.administrator.textdemo.retrofit.GetData;
-import com.example.administrator.textdemo.retrofit.NetRequest_Interface;
 import com.example.administrator.textdemo.retrofit.RetrofitNetImp;
 //https://www.jianshu.com/p/734d3693da02    这也是个mvp
 public class WeatherAtyTest extends AppCompatActivity implements OnWeatherListener,GetData<Weather>{

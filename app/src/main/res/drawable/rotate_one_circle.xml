@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <rotate
+            android:drawable="@drawable/cheese1"
+            android:fromDegrees="0.0"
+            android:pivotX="50.0%"
+            android:pivotY="50.0%"
+            android:toDegrees="360.0" />
+         <!-- 其中toDegrees 值  旋转结束的角度
+         和 android:indeterminateDuration="1800"  值越大旋转越慢  持续时间不定的动画  持续时间
+         -->
+    </item>
+
+</layer-list>

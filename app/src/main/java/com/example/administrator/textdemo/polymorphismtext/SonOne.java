@@ -2,7 +2,7 @@ package com.example.administrator.textdemo.polymorphismtext;
 
 import android.app.Activity;
 
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 
 /**
  * Created by wxm on 2018/5/16.

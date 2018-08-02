@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 import com.example.administrator.textdemo.view.ryglearn.MyImageView;
 import com.example.administrator.textdemo.view.ryglearn.ViewText;
 

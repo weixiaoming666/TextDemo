@@ -30,6 +30,7 @@
         />
 
     <TextView
+        android:id="@+id/tv_demo"
         android:background="@color/colorAccent"
         android:gravity="center"
         android:textSize="20dp"
@@ -110,6 +111,7 @@
  />
 
     <TextView
+
         android:background="@color/shop"
         android:gravity="center"
         android:textSize="20sp"
@@ -184,6 +186,15 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="Gson汉子"
+        />
+    <TextView
+        android:background="@drawable/learn_view_shape"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="grep"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="正则表达式"
         />
 </LinearLayout>
 </ScrollView>

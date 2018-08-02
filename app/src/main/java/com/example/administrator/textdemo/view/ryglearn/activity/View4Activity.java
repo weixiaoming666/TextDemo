@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
+import com.example.administrator.textdemo.utils.ToastUtils;
 import com.example.administrator.textdemo.view.ryglearn.view.MyListview4;
 
 public class View4Activity extends AppCompatActivity {

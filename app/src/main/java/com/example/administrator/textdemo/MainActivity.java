@@ -5,9 +5,11 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.administrator.textdemo.aidl.AIDLAty;
 import com.example.administrator.textdemo.broadcastreceiver.RecivierAty;
+import com.example.administrator.textdemo.grep.GrepAty;
 import com.example.administrator.textdemo.horizontallistView.DemoOne;
 import com.example.administrator.textdemo.intentfilter.IntentFilterDemoAty;
 import com.example.administrator.textdemo.interfacecallback.Aaty;
@@ -16,6 +18,8 @@ import com.example.administrator.textdemo.mvc.WeatherAtyTest;
 import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
 import com.example.administrator.textdemo.polymorphismtext.PolymorphismActivity;
+import com.example.administrator.textdemo.utils.ToastUtils;
+import com.example.administrator.textdemo.view.MyPopupWindow;
 import com.example.administrator.textdemo.view.adddelview.AnimButtonAty;
 import com.example.administrator.textdemo.view.dialog.TextDialog;
 import com.example.administrator.textdemo.view.groupviewaddviewanimotion.DiscrollViewAty;
@@ -28,10 +32,14 @@ import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity {
 
+    private MyPopupWindow myPopupWindow;
+    private TextView tv_demo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tv_demo = (TextView) findViewById(R.id.tv_demo);
     }
     public void start(View view) {
         startActivity(new Intent(this, DemoOne.class));
@@ -193,7 +201,19 @@ public class MainActivity extends AppCompatActivity {
         Bean bean =  gson.fromJson(s,Bean.class);
        String SS =  bean.getWords_result().toString();
        String SS1 =  bean.getWords_result().toString();
-
+    }
+//正则表达式
+    public void grep(View view) {
+//        if (myPopupWindow == null){
+//            myPopupWindow = new MyPopupWindow(this) {
+//                @Override
+//                public void getChose(String chose, int i) {
+//                    ToastUtils.centermsg(MainActivity.this,chose+"---->"+i);
+//                }
+//            };
+//        }
+//        myPopupWindow.showAsDropDown(tv_demo);
+        jump2Aty(GrepAty.class);
     }
 }
 

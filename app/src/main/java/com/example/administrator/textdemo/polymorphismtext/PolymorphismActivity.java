@@ -7,10 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.administrator.textdemo.R;
-import com.example.administrator.textdemo.ToastUtils;
-import com.example.administrator.textdemo.intentfilter.IntentFilterDemo;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
+import com.example.administrator.textdemo.utils.ToastUtils;
 
 public class PolymorphismActivity extends AppCompatActivity {
     // Content View Elements

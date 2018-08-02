@@ -1,4 +1,4 @@
-package com.example.administrator.textdemo;
+package com.example.administrator.textdemo.utils;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -7,9 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.administrator.textdemo.R;
+
 /**
  * tostutils
- * @author chenli
+ * @author 陈立
  *
  * 2016年4月21日上午10:01:37
  */
