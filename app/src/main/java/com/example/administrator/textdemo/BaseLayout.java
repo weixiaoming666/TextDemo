@@ -14,6 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.administrator.textdemo.view.ProgressPopwindon;
+
 /**
  * Created by wxm on 2018/7/31.
  */
@@ -41,11 +43,13 @@ public class BaseLayout extends LinearLayout  {
      * base 加载数据部分
      */
     public View base_load;//通用加载的效果的内容
+    public ProgressPopwindon progressPopwindon ;
     private ProgressBar pb_load;
     public TextView tv_load_no_data;//无数据加载显示
     private LinearLayout ll_load_err;//加载错误
     public Button bt_load_restart;//从新加载
     private int titleId;
+
     public BaseLayout(Context context,int type,int viewId) {
         super(context);
         this.context =context;
@@ -144,8 +148,10 @@ public class BaseLayout extends LinearLayout  {
 
 
     public void loadStart(){
-        base_load.setVisibility(View.VISIBLE);
-        pb_load.setVisibility(View.VISIBLE);
+        if (progressPopwindon == null){
+            progressPopwindon = new ProgressPopwindon(context);
+        }
+        progressPopwindon.showAtLocation(this,17,0,0);
         tv_load_no_data.setVisibility(View.GONE);
         ll_load_err.setVisibility(View.GONE);
 
@@ -155,19 +161,19 @@ public class BaseLayout extends LinearLayout  {
      */
     public void loadNonet(){
         base_load.setVisibility(View.VISIBLE);
-        pb_load.setVisibility(View.GONE);
+        progressPopwindon.dismiss();
         tv_load_no_data.setVisibility(View.GONE);
         ll_load_err.setVisibility(View.VISIBLE);
     }
     public void loadNoData(){
         base_load.setVisibility(View.VISIBLE);
-        pb_load.setVisibility(View.GONE);
+        progressPopwindon.dismiss();
         tv_load_no_data.setVisibility(View.VISIBLE);
         ll_load_err.setVisibility(View.GONE);
     }
     public void loadSuccess(){
         base_load.setVisibility(View.GONE);
-        pb_load.setVisibility(View.GONE);
+        progressPopwindon.dismiss();
     }
     public void setBaseTitle(String title){
         tv_base_title.setText(title);

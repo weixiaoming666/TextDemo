@@ -8,7 +8,6 @@ package com.example.administrator.textdemo.view;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -41,12 +40,7 @@ public abstract class MyPopupWindow extends PopupWindow {
         super(context);
 
         this.mContext=context;
-        //打气筒
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-
-        //打气
-
         mContentView = mInflater.inflate(R.layout.layout_dialog,null);
         lv_pop = mContentView.findViewById(R.id.lv_pop);
          spData= new ArrayList<>();
@@ -83,37 +77,37 @@ public abstract class MyPopupWindow extends PopupWindow {
         /**
          * 设置可以获取集点
          */
-        setFocusable(true);
+        setFocusable(true);//点击外边可以消失
 
-        /**
-         * 设置点击外边可以消失
-         */
-        setOutsideTouchable(true);
-
-        /**
-         *设置可以触摸
-         */
-        setTouchable(true);
-
-
-        /**
-         * 设置点击外部可以消失
-         */
-
-        setTouchInterceptor(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-
-                /**
-                 * 判断是不是点击了外部
-                 */
-                if(event.getAction()==MotionEvent.ACTION_OUTSIDE){
-                    return true;
-                }
-                //不是点击外部
-                return false;
-            }
-        });
+//        /**
+//         * 设置点击外边可以消失
+//         */
+//        setOutsideTouchable(true);
+//
+//        /**
+//         *设置可以触摸
+//         */
+//        setTouchable(true);
+//
+//
+//        /**
+//         * 设置点击外部可以消失
+//         */
+//
+//        setTouchInterceptor(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//
+//                /**
+//                 * 判断是不是点击了外部
+//                 */
+//                if(event.getAction()==MotionEvent.ACTION_OUTSIDE){
+//                    return true;
+//                }
+//                //不是点击外部
+//                return false;
+//            }
+//        });
 
 
         /**
