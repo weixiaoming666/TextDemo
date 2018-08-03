@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="横向滑动测试!"
-        android:background="@color/colorPrimary"/>
+        android:background="@drawable/bt_selector_1"/>
 
     <TextView
         android:background="@color/yellow"
@@ -188,7 +188,7 @@
         android:text="Gson汉子"
         />
     <TextView
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="grep"

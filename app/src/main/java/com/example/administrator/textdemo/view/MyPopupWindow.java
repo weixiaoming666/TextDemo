@@ -36,6 +36,7 @@ public abstract class MyPopupWindow extends PopupWindow {
     private ListView lv_pop;
     private SpinnerAdapter adapter;
     List<String> spData;
+    List<String> strData;
     public MyPopupWindow(Context context) {
         super(context);
 
@@ -44,12 +45,19 @@ public abstract class MyPopupWindow extends PopupWindow {
         mContentView = mInflater.inflate(R.layout.layout_dialog,null);
         lv_pop = mContentView.findViewById(R.id.lv_pop);
          spData= new ArrayList<>();
+        strData= new ArrayList<>();
         spData.add("请选择类型");
-        spData.add("准备工作");
-        spData.add("重点检查");
-        spData.add("常规检查");
-        spData.add("旁站见证");
-        spData.add("质量验收");
+        strData.add("0");
+        spData.add("匹配邮箱");
+        strData.add("\\w[-\\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\\.)+[A-Za-z]{2,14}");
+        spData.add("匹配中文");
+        strData.add("[\\u4e00-\\u9fa5]+");
+        spData.add("匹配身份证");
+        strData.add("\\d{17}[0-9Xx]|\\d{15}");
+        spData.add("匹配手机号");
+        strData.add("(13\\d|14[579]|15[^4\\D]|17[^49\\D]|18\\d)\\d{8}");
+        spData.add("匹配时间");
+        strData.add("(([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})-(((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)-(0[1-9]|[12][0-9]|30))|(02-(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))-02-29)");
         adapter=new SpinnerAdapter(spData);
 
         //设置View
@@ -129,7 +137,7 @@ public abstract class MyPopupWindow extends PopupWindow {
         lv_pop.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                getChose(spData.get(i),i);
+                getChose(spData.get(i),i,strData.get(i));
                 dismiss();
             }
         });
@@ -167,12 +175,11 @@ public abstract class MyPopupWindow extends PopupWindow {
         class ViewHolder{
             private TextView tv;
             private ImageView iv;
-
             public ViewHolder(View view) {
                 tv= (TextView) view.findViewById(R.id.tv);
                 iv= (ImageView) view.findViewById(R.id.iv);
             }
         }
     }
-    public abstract void getChose(String chose, int i);
+    public abstract void getChose(String chose, int i, String pattern );
 }

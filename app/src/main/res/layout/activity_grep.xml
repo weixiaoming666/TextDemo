@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="popview"
+        android:text="正则表达式验证类型"
         android:background="@color/gray"
          />
     <TextView
@@ -24,4 +24,25 @@
         android:text="加载按钮并且取消"
         android:background="@color/graw_0"
         />
+    <EditText
+        android:id="@+id/et_grep"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="请输入验证的文字"/>
+    <Button
+        android:onClick="verityGrep"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/bt_grep"
+        android:background="@drawable/bt_selector_1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:hint="验     证"/>
 </LinearLayout>
