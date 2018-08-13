@@ -7,12 +7,12 @@
                 android:radius="14dp"
                 />
             <gradient
-                android:gradientRadius="95"
+                android:gradientRadius="99"
                 android:centerX="80%"
                 android:centerY="50%"
-                android:centerColor="#47A891"
-                android:startColor="#7d897b"
-                android:endColor="#FF5D3D"
+                android:centerColor="#a2eae2"
+                android:startColor="#4b85f9"
+                android:endColor="#ca2f11"
                 android:type="radial"
                 />
             <padding
@@ -34,7 +34,6 @@
 
     <item android:state_pressed="true">
         <shape>
-
             <corners
                 android:radius="14dp"
                 />
@@ -44,7 +43,7 @@
                 android:centerY="50%"
                 android:centerColor="#ecdd0a"
                 android:startColor="#77d9c7"
-                android:endColor="#60352d"
+                android:endColor="#2e46e6"
                 android:type="radial"
                 />
             <padding
@@ -58,7 +57,7 @@
                 android:height="60dp"
                 />
             <stroke
-                android:width="2dp"
+                android:width="0.5dp"
                 android:color="#878787"
                 />
         </shape>

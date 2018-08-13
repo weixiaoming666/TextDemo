@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.textdemo.R;
+import com.example.administrator.textdemo.interfacecallback.demo.SumbitAty;
 
 //  https://blog.csdn.net/phenixyf/article/details/52050302   在一个aty中调用别的aty 方法 不适用
 // 所谓接口回调  说白了  就是在 a 中 声明一个接口，实例化这个接口；在别的类中调用这个引用的方法 便是接口回调
@@ -47,5 +48,10 @@ public class Aaty extends AppCompatActivity implements DataChanged{
     }
     public Interface getAnInterface() {
         return anInterface;
+    }
+
+    public void jupSubitaty(View view) {
+        Intent intent = new Intent(this,SumbitAty.class);
+        startActivity(intent);
     }
 }

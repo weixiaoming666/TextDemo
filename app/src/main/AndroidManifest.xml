@@ -96,6 +96,7 @@
         <activity android:name=".view.ryglearn.activity.View4Activity"></activity>
         <activity android:name=".grep.GrepAty"
             android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name=".interfacecallback.demo.SumbitAty" />
     </application>
 
 </manifest>

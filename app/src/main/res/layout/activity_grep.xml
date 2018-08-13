@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="加载按钮并且取消"
+        android:text="测试baseaty的 通用加载，无net，无数据情况"
         android:background="@color/graw_0"
         />
     <EditText

@@ -3,7 +3,6 @@ package com.example.administrator.textdemo;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -20,6 +19,7 @@ import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
 import com.example.administrator.textdemo.polymorphismtext.PolymorphismActivity;
 import com.example.administrator.textdemo.utils.ToastUtils;
 import com.example.administrator.textdemo.view.MyPopupWindow;
+import com.example.administrator.textdemo.view.ShowMePop;
 import com.example.administrator.textdemo.view.adddelview.AnimButtonAty;
 import com.example.administrator.textdemo.view.dialog.TextDialog;
 import com.example.administrator.textdemo.view.groupviewaddviewanimotion.DiscrollViewAty;
@@ -30,16 +30,28 @@ import com.example.administrator.textdemo.view.ryglearn.ViewRXGAty;
 import com.example.administrator.textdemo.view.viewpage.ViewPageDemo1;
 import com.google.gson.Gson;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private MyPopupWindow myPopupWindow;
     private TextView tv_demo;
+    private  ShowMePop showMePop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setViewTitle(R.layout.activity_main);
+        setBaseTitle("首页目录测试列表");
+        setRight1ResouceId(R.mipmap.me_right);
         tv_demo = (TextView) findViewById(R.id.tv_demo);
+        baseLayout.iv_base_right1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (showMePop == null){
+                    showMePop   = new ShowMePop(context);
+                }
+                showMePop.showAtLocation( baseLayout.iv_base_right1,17,0,0);
+            }
+        });
     }
     public void start(View view) {
         startActivity(new Intent(this, DemoOne.class));

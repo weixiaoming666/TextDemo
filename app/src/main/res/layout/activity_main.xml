@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/graw"
     tools:context="com.example.administrator.textdemo.MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:background="@drawable/bt_selector_1"/>
 
     <TextView
-        android:background="@color/yellow"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20dp"
         android:onClick="intentFilter"
@@ -31,7 +32,7 @@
 
     <TextView
         android:id="@+id/tv_demo"
-        android:background="@color/colorAccent"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20dp"
         android:onClick="aidlText"
@@ -40,7 +41,7 @@
         android:text="IntentFilter Text!"
        />
     <TextView
-        android:background="@color/mvp"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="mvpDemo"
@@ -49,7 +50,7 @@
         android:text="mvp模式 Text!"
        />
     <TextView
-        android:background="@color/graw"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20dp"
         android:onClick="viewpageDemo1"
@@ -58,7 +59,7 @@
         android:text="水滴viewpage Text!"
         />
     <TextView
-        android:background="@color/micolor"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="miClock"
@@ -67,7 +68,7 @@
         android:text="小米时钟 Text!"
          />
     <TextView
-        android:background="@color/micolor"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="myClock"
@@ -76,7 +77,7 @@
         android:text="mvp 自动深南工!"
         />
     <TextView
-        android:background="@color/callback"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="callback"
@@ -84,7 +85,7 @@
         android:layout_height="30dp"
         android:text="标准接口回调" />
     <TextView
-        android:background="@color/mvc"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="jumpmvc"
@@ -93,7 +94,7 @@
         android:text="MVC!!!!"
        />
     <TextView
-        android:background="@color/mvc"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="jumpRader"
@@ -101,7 +102,7 @@
         android:layout_height="30dp"
         android:text="雷达波形图!!!!" />
     <TextView
-        android:background="@color/discrowview"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="jumpDiscroll"
@@ -111,8 +112,7 @@
  />
 
     <TextView
-
-        android:background="@color/shop"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="shopAddDel"
@@ -122,7 +122,7 @@
       />
     <TextView
 
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="learnView"
@@ -132,7 +132,7 @@
         />
     <TextView
 
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="showDialog"
@@ -142,7 +142,7 @@
         />
     <TextView
 
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="showDuoTai"
@@ -152,7 +152,7 @@
         />
     <TextView
 
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="showReciver"
@@ -161,7 +161,7 @@
         android:text="广播"
         />
     <TextView
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="viewLeanRYG"
@@ -170,7 +170,7 @@
         android:text="任玉刚 view 研究"
         />
     <TextView
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="litepal"
@@ -179,7 +179,7 @@
         android:text="litePal"
         />
     <TextView
-        android:background="@drawable/learn_view_shape"
+        android:background="@drawable/bt_selector_1"
         android:gravity="center"
         android:textSize="20sp"
         android:onClick="gson2hanzi"
