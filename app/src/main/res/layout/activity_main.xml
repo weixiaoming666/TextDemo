@@ -1,200 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/graw"
     tools:context="com.example.administrator.textdemo.MainActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-  >
-    <TextView
-        android:gravity="center"
-        android:onClick="start"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="横向滑动测试!"
-        android:background="@drawable/bt_selector_1"/>
 
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:onClick="intentFilter"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="AIDL Text!"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_demo"
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:onClick="aidlText"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="IntentFilter Text!"
-       />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="mvpDemo"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="mvp模式 Text!"
-       />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:onClick="viewpageDemo1"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="水滴viewpage Text!"
-        />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="miClock"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="小米时钟 Text!"
-         />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="myClock"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="mvp 自动深南工!"
-        />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="callback"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="标准接口回调" />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="jumpmvc"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="MVC!!!!"
-       />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="jumpRader"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="雷达波形图!!!!" />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="jumpDiscroll"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="带动画加入的自定义view!!!!"
- />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="start"
+            android:text="横向滑动测试!" />
 
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="shopAddDel"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="购物车增减按钮!!!!"
-      />
-    <TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="intentFilter"
+            android:text="AIDL Text!"
+            android:textSize="20dp" />
 
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="learnView"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="一字一句敲打的自定义view学习!!!!"
-        />
-    <TextView
+        <TextView
+            android:id="@+id/tv_demo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="aidlText"
+            android:text="IntentFilter Text!"
+            android:textSize="20dp" />
 
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="showDialog"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="show Dialog"
-        />
-    <TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="mvpDemo"
+            android:text="mvp模式 Text!"
+            android:textSize="20sp" />
 
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="showDuoTai"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="多态，不存在的"
-        />
-    <TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="viewpageDemo1"
+            android:text="水滴viewpage Text!"
+            android:textSize="20dp" />
 
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="showReciver"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="广播"
-        />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="viewLeanRYG"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="任玉刚 view 研究"
-        />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="litepal"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="litePal"
-        />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="gson2hanzi"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Gson汉子"
-        />
-    <TextView
-        android:background="@drawable/bt_selector_1"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:onClick="grep"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="正则表达式"
-        />
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="miClock"
+            android:text="小米时钟 Text!"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="myClock"
+            android:text="mvp 自动深南工!"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="callback"
+            android:text="标准接口回调"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="jumpmvc"
+            android:text="MVC!!!!"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="jumpRader"
+            android:text="雷达波形图!!!!"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="jumpDiscroll"
+            android:text="带动画加入的自定义view!!!!"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="shopAddDel"
+            android:text="购物车增减按钮!!!!"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="learnView"
+            android:text="一字一句敲打的自定义view学习!!!!"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="showDialog"
+            android:text="show Dialog"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="showDuoTai"
+            android:text="多态，不存在的"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="showReciver"
+            android:text="广播"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="jumpGaodeMap"
+            android:text="高德地图的学习和测试"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="viewLeanRYG"
+            android:text="任玉刚 view 研究"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="litepal"
+            android:text="litePal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="gson2hanzi"
+            android:text="Gson汉子"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="grep"
+            android:text="正则表达式"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_selector_1"
+            android:gravity="center"
+            android:onClick="jumpDemo"
+            android:text="一些demo"
+            android:textSize="20sp" />
+    </LinearLayout>
 </ScrollView>

@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import com.example.administrator.textdemo.aidl.AIDLAty;
 import com.example.administrator.textdemo.broadcastreceiver.RecivierAty;
+import com.example.administrator.textdemo.demo.Main2Activity;
+import com.example.administrator.textdemo.gaodemap.MainMapActivity;
 import com.example.administrator.textdemo.grep.GrepAty;
 import com.example.administrator.textdemo.horizontallistView.DemoOne;
 import com.example.administrator.textdemo.intentfilter.IntentFilterDemoAty;
@@ -226,6 +228,14 @@ public class MainActivity extends BaseActivity {
 //        }
 //        myPopupWindow.showAsDropDown(tv_demo);
         jump2Aty(GrepAty.class);
+    }
+
+    public void jumpDemo(View view) {
+        jump2Aty(Main2Activity.class);
+    }
+
+    public void jumpGaodeMap(View view) {
+        jump2Aty(MainMapActivity.class);
     }
 }
 

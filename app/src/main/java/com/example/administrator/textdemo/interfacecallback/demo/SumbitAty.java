@@ -40,6 +40,8 @@ public class SumbitAty extends BaseActivity{
             adapter = new DemoAdapter(context);
         }
         lv_demo.setAdapter(adapter);
+        
+
     }
 
     //提交数据

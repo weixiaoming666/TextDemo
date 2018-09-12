@@ -29,37 +29,27 @@ import java.util.List;
  * Created by 卫晓明
  */
 public abstract class MyPopupWindow extends PopupWindow {
-
+    public List<String> datas ;
     Context mContext;
     private  LayoutInflater mInflater;
     private  View mContentView;
     private ListView lv_pop;
     private SpinnerAdapter adapter;
-    List<String> spData;
-    List<String> strData;
+    public List<String> spData;
+    public List<String> strData;
     public MyPopupWindow(Context context) {
         super(context);
-
         this.mContext=context;
-        mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        initAll();
+
+    }
+
+    private void initAll() {
+        mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         mContentView = mInflater.inflate(R.layout.layout_dialog,null);
         lv_pop = mContentView.findViewById(R.id.lv_pop);
-         spData= new ArrayList<>();
-        strData= new ArrayList<>();
-        spData.add("请选择类型");
-        strData.add("0");
-        spData.add("匹配邮箱");
-        strData.add("\\w[-\\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\\.)+[A-Za-z]{2,14}");
-        spData.add("匹配中文");
-        strData.add("[\\u4e00-\\u9fa5]+");
-        spData.add("匹配身份证");
-        strData.add("\\d{17}[0-9Xx]|\\d{15}");
-        spData.add("匹配手机号");
-        strData.add("(13\\d|14[579]|15[^4\\D]|17[^49\\D]|18\\d)\\d{8}");
-        spData.add("匹配时间");
-        strData.add("(([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})-(((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)-(0[1-9]|[12][0-9]|30))|(02-(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))-02-29)");
+        setShowData();
         adapter=new SpinnerAdapter(spData);
-
         //设置View
         setContentView(mContentView);
 
@@ -126,7 +116,12 @@ public abstract class MyPopupWindow extends PopupWindow {
         initListener();
     }
 
-
+    public MyPopupWindow(Context context, List<String> showDatas) {
+        super(context);
+        this.mContext=context;
+        datas = showDatas;
+        initAll();
+    }
 
 
     private void initView() {
@@ -182,4 +177,21 @@ public abstract class MyPopupWindow extends PopupWindow {
         }
     }
     public abstract void getChose(String chose, int i, String pattern );
+    public void  setShowData(){
+        spData= new ArrayList<>();
+        strData= new ArrayList<>();
+        spData.add("请选择类型");
+        strData.add("0");
+        spData.add("匹配邮箱");
+        strData.add("\\w[-\\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\\.)+[A-Za-z]{2,14}");
+        spData.add("匹配中文");
+        strData.add("[\\u4e00-\\u9fa5]+");
+        spData.add("匹配身份证");
+        strData.add("\\d{17}[0-9Xx]|\\d{15}");
+        spData.add("匹配手机号");
+        strData.add("(13\\d|14[579]|15[^4\\D]|17[^49\\D]|18\\d)\\d{8}");
+        spData.add("匹配时间");
+        strData.add("(([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})-(((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)-(0[1-9]|[12][0-9]|30))|(02-(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))-02-29)");
+
+    }
 }

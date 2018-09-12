@@ -8,7 +8,23 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //地图SDK（包含其搜索功能）需要的基础权限
+
+    <!-- 允许程序打开网络套接字 -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".MyApplication"
@@ -18,6 +34,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b4e5bbcbc709dcc57a6c23495691aa39">
+            //开发者申请的key
+        </meta-data>
+
+        <service android:name="com.amap.api.location.APSService" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -93,10 +117,18 @@
         <activity android:name=".view.ryglearn.activity.View2Activity" />
         <activity android:name=".litepal.LitepalMainActivity" />
         <activity android:name=".view.ryglearn.activity.View3Activity" />
-        <activity android:name=".view.ryglearn.activity.View4Activity"></activity>
-        <activity android:name=".grep.GrepAty"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name=".view.ryglearn.activity.View4Activity" />
+        <activity
+            android:name=".grep.GrepAty"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity android:name=".interfacecallback.demo.SumbitAty" />
+        <activity android:name=".demo.Main2Activity" />
+        <activity android:name=".demo.ShowDemoIntentData" />
+        <activity
+            android:name=".gaodemap.MainMapActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity android:name=".demo.fingerprint.FingerprinAty"></activity>
+        <activity android:name=".demo.fingerprint.LoginActivity" />
     </application>
 
 </manifest>
