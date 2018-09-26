@@ -20,6 +20,7 @@ import com.example.administrator.textdemo.mvpdemo.MvpDemoAty;
 import com.example.administrator.textdemo.mvpdemo.MyMVPdemoAty;
 import com.example.administrator.textdemo.polymorphismtext.PolymorphismActivity;
 import com.example.administrator.textdemo.utils.ToastUtils;
+import com.example.administrator.textdemo.video.VedioActivity;
 import com.example.administrator.textdemo.view.MyPopupWindow;
 import com.example.administrator.textdemo.view.ShowMePop;
 import com.example.administrator.textdemo.view.adddelview.AnimButtonAty;
@@ -236,6 +237,8 @@ public class MainActivity extends BaseActivity {
 
     public void jumpGaodeMap(View view) {
         jump2Aty(MainMapActivity.class);
+    }public void jumpVideo(View view) {
+        jump2Aty(VedioActivity.class);
     }
 }
 

@@ -63,9 +63,9 @@ public class FingerprintDialogFragment extends DialogFragment {
         View v = inflater.inflate(R.layout.fingerprint_dialog, container, false);
         final ImageView spaceshipImage = (ImageView) v.findViewById(R.id.iv);
         final Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(getActivity(), R.anim.hyperspace_jump);
-        hyperspaceJumpAnimation.setDuration(1000);
-        hyperspaceJumpAnimation.setRepeatMode(Animation.REVERSE);
-        hyperspaceJumpAnimation.setAnimationListener(new Animation.AnimationListener() {
+        hyperspaceJumpAnimation.setDuration(1000);//动画持续时间
+        hyperspaceJumpAnimation.setRepeatMode(Animation.REVERSE);//重复方式
+        hyperspaceJumpAnimation.setAnimationListener(new Animation.AnimationListener() {//动画监听
             @Override
             public void onAnimationStart(Animation animation) {
 

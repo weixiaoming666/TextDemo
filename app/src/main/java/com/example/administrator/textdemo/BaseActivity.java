@@ -24,6 +24,7 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
     public BaseLayout baseLayout;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);//冷启动优化
         super.onCreate(savedInstanceState);
         context = this;
         UtilLog.e("activity",context.getClass().getPackage().getName()+context.getClass().getName());

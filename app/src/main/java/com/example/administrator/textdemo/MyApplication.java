@@ -9,6 +9,7 @@ import org.litepal.LitePalApplication;
 public class MyApplication extends LitePalApplication {
     @Override
     public void onCreate() {
+        //替换为原来的主题，在onCreate之前调用
         super.onCreate();
         LitePal.getDatabase();
     }
