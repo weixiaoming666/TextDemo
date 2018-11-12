@@ -11,7 +11,6 @@
 这个view  其实这里可以做弹出的progressBar的
 -->
     <ProgressBar
-
         android:id="@+id/pb_load"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +20,6 @@
     <!--
 android:indeterminateDrawable="@drawable/progress_demo"  可以用drawable 下建立一个帧动画实现
 也可以做一个 层次旋转动画  android:indeterminateDrawable="@drawable/rotate_one_circle"
-
 -->
     <TextView
         android:id="@+id/tv_load_no_data"
@@ -32,7 +30,6 @@ android:indeterminateDrawable="@drawable/progress_demo"  可以用drawable 下�
         android:textColor="#c1c1c1"
         android:textSize="18sp" >
     </TextView>
-
     <LinearLayout
         android:id="@+id/ll_load_err"
         android:layout_width="wrap_content"
@@ -40,7 +37,6 @@ android:indeterminateDrawable="@drawable/progress_demo"  可以用drawable 下�
         android:layout_centerInParent="true"
         android:gravity="center_horizontal"
         android:orientation="vertical" >
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package com.example.administrator.textdemo;
+package com.example.administrator.textdemo.demoZSZX;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -14,21 +14,22 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.administrator.textdemo.R;
 import com.example.administrator.textdemo.view.ProgressPopwindon;
 
 /**
- * Created by wxm on 2018/7/31.
- *通用加载页面view
+ * Created by wxm on 2018/11/12.
  */
-public class BaseLayout extends LinearLayout  {
-    private  ViewGroup view_content;////用户自己的内容 (包括标题)
-    private  View view_content_no_title;//用户自己的内容 (无标题)
+public class ZSZXBaseLayout extends LinearLayout  {
+    private ViewGroup view_content;////用户自己的内容 (包括标题)
+    private View view_content_no_title;//用户自己的内容 (无标题)
     private View personl_title;//个人自己的title(这个布局只有 type=BASE_LOAD的时候才有)
     private LayoutInflater inflater;
     private Context context;
     private View base_title;
     private View base_title_person;
-    private int type;//1 使用通用加载的title 不使用通用加载的界面 2 使用通用加载的的界面 不使用title 3 使用通用加载的title  与加载的界面
+    private int type;//1 使用通用加载的title 不使用通用加载的界面
+    // 2 使用通用加载的的界面 不使用title 3 使用通用加载的title  与加载的界面
     private LinearLayout ll_base_title;
     public View v_base_infobar;
     public LinearLayout ll_base_left;
@@ -51,7 +52,7 @@ public class BaseLayout extends LinearLayout  {
     public Button bt_load_restart;//从新加载
     private int titleId;
 
-    public BaseLayout(Context context,int type,int viewId) {
+    public ZSZXBaseLayout(Context context,int type,int viewId) {
         super(context);
         this.context =context;
         this.type=type;
@@ -61,8 +62,8 @@ public class BaseLayout extends LinearLayout  {
     }
 
 
-//    不使用通用的title指使用通用的加载页面
-    public BaseLayout(Context context, int type,int resouceId,int titleId,int contentId) {
+
+    public ZSZXBaseLayout(Context context, int type,int resouceId,int titleId,int contentId) {
         super(context);
         this.context=context;
         this.type=type;
@@ -73,10 +74,11 @@ public class BaseLayout extends LinearLayout  {
             personl_title=view_content.findViewById(titleId);
         }
         view_content_no_title=view_content.findViewById(contentId);
+
         init();
     }
 
-    public BaseLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ZSZXBaseLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -84,7 +86,7 @@ public class BaseLayout extends LinearLayout  {
 
     private void init() {
         this.setOrientation(VERTICAL);
-        base_title=inflater.inflate(R.layout.base_title, null);
+        base_title=inflater.inflate(R.layout.zszh_base_title, null);
         iv_base_title_left = (ImageView) base_title.findViewById(R.id.iv_base_title_left);
         tv_base_title = (TextView) base_title.findViewById(R.id.tv_base_title);
         ll_base_left = (LinearLayout) base_title.findViewById(R.id.ll_base_left);
@@ -107,7 +109,7 @@ public class BaseLayout extends LinearLayout  {
         initDisplay();
     }
 
-    private void initDisplay() {
+    private void initDisplay() {//绝对布局和相对布局
         if(type==1){
             RelativeLayout.LayoutParams baseTitleParams=new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
             RelativeLayout.LayoutParams personalContentParams=new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
@@ -142,7 +144,7 @@ public class BaseLayout extends LinearLayout  {
             baseLoadParams.addRule(RelativeLayout.BELOW,R.id.ll_base_title);
             addView(base_load,baseLoadParams);
             RelativeLayout.LayoutParams personalContentParams=new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.FILL_PARENT);
-           addView(view_content,personalContentParams);
+            addView(view_content,personalContentParams);
         }
     }
 
