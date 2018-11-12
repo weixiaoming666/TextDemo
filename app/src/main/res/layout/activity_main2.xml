@@ -78,6 +78,16 @@
         android:gravity="center"
         android:textSize="20sp"
         android:text="指纹解锁demo"/>
+    <TextView
+        android:background="@color/yellow"
+        android:layout_marginTop="100dp"
+        android:onClick="demoRecyclerview"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Recyclerview 测试"/>
 
 
 </LinearLayout>

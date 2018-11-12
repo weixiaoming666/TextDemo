@@ -42,10 +42,12 @@
 
         <service android:name="com.amap.api.location.APSService" />
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Launcher">
-            <!-- app  启动白屏黑屏优化之修改 启动方式-->
+
+            <!-- app  启动白屏黑屏优化之修改 启动方式 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -132,9 +134,11 @@
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity android:name=".demo.fingerprint.FingerprinAty" />
         <activity android:name=".demo.fingerprint.LoginActivity" />
-        <activity android:name=".video.VedioActivity"
+        <activity
+            android:name=".video.VedioActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".demo.recyclerview.RecyclerviewActivity"></activity>
     </application>
 
 </manifest>
