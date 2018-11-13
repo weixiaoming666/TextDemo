@@ -20,4 +20,5 @@ class GlideImageLoader implements ImageLoaderInterface {
     public View createImageView(Context context) {
         return null;
     }
+
 }
