@@ -1,6 +1,7 @@
 package com.example.administrator.textdemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -194,6 +195,7 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
     }
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
     /**
      * 设置标题的名字
@@ -297,5 +299,8 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
     //取消沉浸式标题栏
     public void setImmersiveTitleBarGone(){
         baseLayout.v_base_infobar.setVisibility(View.GONE);
+    }
+    public void jump2Aty(Intent intent){
+        startActivity(intent);
     }
 }

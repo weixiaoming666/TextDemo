@@ -9,7 +9,7 @@ import com.example.administrator.textdemo.BaseActivity;
 import com.example.administrator.textdemo.R;
 import com.example.administrator.textdemo.demo.fingerprint.LoginActivity;
 import com.example.administrator.textdemo.demo.recyclerview.RecyclerviewActivity;
-import com.example.administrator.textdemo.demoZSZX.ZszxMainActivity;
+import com.example.administrator.textdemo.demoZSZX.Main3Activity;
 import com.example.administrator.textdemo.utils.TimeUtils;
 
 public class Main2Activity extends BaseActivity {
@@ -62,6 +62,7 @@ public class Main2Activity extends BaseActivity {
 
     public void demoZSZX(View view) {
 
-        startActivity(new Intent(this,ZszxMainActivity.class));
+//        startActivity(new Intent(this,ZszxMainActivity.class));
+        startActivity(new Intent(this,Main3Activity.class));
     }
 }

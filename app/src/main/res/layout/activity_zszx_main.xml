@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,8 +111,131 @@
                         android:layout_height="wrap_content"
                         app:image_scale_type="fit_xy"/>
                 </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp" />
+                    <ImageView
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp" />
+                    <ImageView
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="热卖商品"/>
+                    <com.example.administrator.textdemo.demoZSZX.MyListview
+                        android:id="@+id/mlv_rm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.example.administrator.textdemo.demoZSZX.MyListview>
+                    <!--查看更多-->
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"/>
+                    <!--限时优惠-->
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/yellow"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="限时优惠"/>
+                    <com.example.administrator.textdemo.demoZSZX.view.MyGradView
+                        android:id="@+id/gv_xsyh"
+                        android:numColumns="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.example.administrator.textdemo.demoZSZX.view.MyGradView>
+                    <!--查看更多-->
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"/>
+                    <!--原生食材-->
+                    <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/yellow"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="特色店铺"/>
+                    <com.example.administrator.textdemo.demoZSZX.MyListview
+                        android:id="@+id/mlv_ts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.example.administrator.textdemo.demoZSZX.MyListview>
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"/>
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/yellow"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="新品上架"/>
+                    <com.example.administrator.textdemo.demoZSZX.view.MyGradView
+                        android:id="@+id/gv_xpsj"
+                        android:numColumns="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.example.administrator.textdemo.demoZSZX.view.MyGradView>
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

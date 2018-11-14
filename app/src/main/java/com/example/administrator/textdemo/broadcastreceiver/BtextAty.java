@@ -19,7 +19,7 @@ public class BtextAty extends AppCompatActivity {
     }
 
 
-    static class MyBroadcastReceiverB extends BroadcastReceiver {
+    public static class MyBroadcastReceiverB extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
             ToastUtils.shortgmsg(context,intent.getStringExtra("666"));

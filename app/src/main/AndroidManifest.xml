@@ -138,10 +138,13 @@
             android:name=".video.VedioActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name=".demo.recyclerview.RecyclerviewActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".demoZSZX.ZszxMainActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".demo.recyclerview.RecyclerviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".demoZSZX.ZszxMainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".demoZSZX.Main3Activity"></activity>
     </application>
 
 </manifest>
