@@ -65,4 +65,8 @@ public class Main2Activity extends BaseActivity {
 //        startActivity(new Intent(this,ZszxMainActivity.class));
         startActivity(new Intent(this,Main3Activity.class));
     }
+
+    public void demoLogin(View view) {//第三方登录
+
+    }
 }
