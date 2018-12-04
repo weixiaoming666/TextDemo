@@ -103,6 +103,15 @@
         android:gravity="center"
         android:textSize="20sp"
         android:text="ZSZX 测试"/>
+        <TextView
+        android:background="@color/yellow"
+        android:onClick="demoLogin"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="第三方登录"/>
     </LinearLayout>
 
 </ScrollView>

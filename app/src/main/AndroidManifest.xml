@@ -144,7 +144,8 @@
         <activity
             android:name=".demoZSZX.ZszxMainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".demoZSZX.Main3Activity"></activity>
+        <activity android:name=".demoZSZX.Main3Activity" />
+        <activity android:name=".demo.imageshuiyin.ImageShuiyinActivity"></activity>
     </application>
 
 </manifest>
